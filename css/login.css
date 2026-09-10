@@ -1,0 +1,28 @@
+body {
+    background-color: var(--bg-color-primary);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.text {
+    width: 50%;
+    background-color: blue;
+}
+
+.form {
+    width: 50%;
+    background-color: blueviolet;
+}
