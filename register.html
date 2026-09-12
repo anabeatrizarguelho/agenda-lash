@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta - Agenda Lash</title>
+
+    <script src="https://kit.fontawesome.com/b0d4af56fd.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <main>
+        <section class="form">
+            <div>
+                <p class="mark">Agenda de cílios</p>
+                <h5>Criar conta</h5>
+                <p class="subtext">Comece a organizar suas clientes</p>
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" maxlength="50">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="senha">Senha</label>
+                <div class="password-wrapper">
+                    <input type="password" name="password" id="password" minlength="8" maxlength="10">
+                    <i class="fa-regular fa-eye" id="togglePassword"></i>
+                </div>
+
+                <!-- <i class="fa-regular fa-eye-slash"></i> -->
+                
+                <!-- <p class="reset-password">Esqueci minha senha</p> -->
+
+                <button class="submit-btn" type="submit">Entrar</button>
+
+                <p class="login">Já possuí conta? <a href="login.html">Entrar</a></p>
+            </div>
+        </section>
+        <section class="text">
+            <h4>Comece a organizar sua agenda em poucos minutos</h4>
+            <p>Sem mais clientes esquecidas ou fora do prazo</p>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -125,12 +125,12 @@ input[type="password"] {
 
 .password-wrapper .fa-eye,
 .password-wrapper .fa-eye-slash {
-    position: absolute;
-    right: 12px;
-    top: 40%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: var(--color-black-primary);
+  position: absolute;
+  right: 12px;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--color-black-primary);
 }
 
 .submit-btn {
@@ -198,7 +198,7 @@ button i {
     margin: -9px 0px 20px 0px;
 }
 
-.register {
+.login {
     font-family: "Inter", arial, sans-serif;
     font-weight: 500;
     color: var(--color-gray-secundary);
@@ -207,7 +207,7 @@ button i {
     margin-top: 10px;
 }
 
-.register a {
+.login a {
     font-weight: 600;
     text-decoration: none;
     color: var(--color-black-primary);
