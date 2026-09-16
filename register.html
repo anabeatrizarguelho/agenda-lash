@@ -20,15 +20,15 @@
                 <p class="subtext">Comece a organizar suas clientes</p>
 
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" maxlength="50">
+                <input type="text" name="nome" id="nome" maxlength="50" required>
 
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
 
                 <label for="senha">Senha</label>
                 <div class="password-wrapper">
-                    <input type="password" name="password" id="password" minlength="8" maxlength="10">
-                    <i class="fa-regular fa-eye" id="togglePassword"></i>
+                    <input type="password" id="showPassword" name="password" minlength="8" maxlength="10" required>
+                    <i id="icone-olho" class="fa-regular fa-eye"></i>
                 </div>
 
                 <!-- <i class="fa-regular fa-eye-slash"></i> -->

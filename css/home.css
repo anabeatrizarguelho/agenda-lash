@@ -1,0 +1,133 @@
+body {
+    background-color: var(--bg-color-primary);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3rem 3rem 0 0;
+}
+
+header p {
+    font-family: "Inria Sans", arial, sans-serif ;
+    font-size: 18px;
+    color: var(--);
+    margin-right: 2rem;
+}
+
+header span {
+    font-weight: 700;
+}
+
+.fa-regular.fa-bell {
+    font-size: 22px;
+    margin-right: 2rem;
+}
+
+.fa-regular.fa-user {
+    background-color: var(--color-white-primary);
+    padding: 13px;
+    border: 1.5px solid var(--color-gray-quaternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header-main {
+    display: grid;
+    grid-template-columns: 80% 15%;
+    padding: 4rem 1rem 3rem 2rem;
+}
+
+.header-main h4 {
+    font-family: "Poppins", arial, sans-serif;
+    font-size: 36px;
+}
+
+.header-main button {
+    font-family: "Inter", arial, sans-serif;
+    font-size: 15px;
+    background-color: var(--color-black-primary);
+    color: var(--color-white-primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 43px;
+}
+
+/* .header-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 3rem 2rem;
+} */
+
+
+
+.cards-area {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    padding-right: 2rem;
+
+}
+
+.cards-contadores {
+    font-family: "Inter", arial, sans-serif;
+    background-color: var(--color-white-primary);
+    align-content: center;
+    height: 113px;
+    margin: 0 1% 15% 10%;
+    /* margin: 0 1rem 0 2rem; */
+    padding-left: 1rem;
+    border-radius: 10px;
+    border-left: 3px solid var(--color-black-primary);
+}
+
+
+.cards-contadores p {
+    font-size: 14px;
+    color: var(--color-gray-primary);
+    margin-bottom: 2px;
+}
+
+.cards-contadores h5 {
+    font-size: 25px;
+}
+
+.cards-clientes-area {
+    padding-left: 2rem;
+}
+
+
+
+/* 
+.card-cliente {
+    background-color: var(--color-white-primary);
+    width: 100%;
+    height: 81px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.card-cliente div {
+    display: flex;
+
+} */
+
+
+
+
+
+
+@media (max-width: 571px) {
+    .cards-contadores p {
+        font-size: small;
+    }
+}
+
+
+
+
