@@ -44,21 +44,21 @@ main {
     
 }
 
-.form {
+form {
     background-color: var(--color-white-primary);
     min-width: 0;
     justify-content: center;
     align-content: center;
 }
 
-.form .mark {
+form .mark {
     display: none;
     font-family: "Inter", arial, sans-serif;
     font-size: 18px;
     margin-bottom: 5px
 }
 
-.form h5 {
+form h5 {
     font-family: "Inter", arial, sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -72,7 +72,7 @@ main {
     margin-bottom: 15px;
 }
 
-.form div {
+form div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,7 +116,7 @@ input[type="password"] {
     color: var(--color-black-primary);
 }
 
-.form .password-wrapper {
+form .password-wrapper {
     display: block;
     padding: 0;
     margin-bottom: 15px;
@@ -234,10 +234,10 @@ button i {
         border-radius: 10px;
         border: 2px solid var(--color-gray-quaternary);
     }
-    .form h5 {
+    form h5 {
         font-size: 20px;
     }
-    .form .mark {
+    form .mark {
         display: flex;
         font-family: "Inter", arial, sans-serif;
         color: var(--color-gray-secundary);

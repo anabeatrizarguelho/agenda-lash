@@ -13,14 +13,14 @@
 </head>
 <body>
     <main>
-        <section class="form">
-            <div>
+        <form action="">
+           <div>
                 <p class="mark">Agenda de cílios</p>
                 <h5>Criar conta</h5>
                 <p class="subtext">Comece a organizar suas clientes</p>
 
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" maxlength="50" required>
+                <input type="text" name="nome" id="nome" maxlength="150" required>
 
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" required>
@@ -28,24 +28,21 @@
                 <label for="senha">Senha</label>
                 <div class="password-wrapper">
                     <input type="password" id="showPassword" name="password" minlength="8" maxlength="10" required>
-                    <i id="icone-olho" class="fa-regular fa-eye"></i>
+                    <i id="hidePassword" class="fa-regular fa-eye"></i>
                 </div>
-
-                <!-- <i class="fa-regular fa-eye-slash"></i> -->
-                
-                <!-- <p class="reset-password">Esqueci minha senha</p> -->
 
                 <button class="submit-btn" type="submit">Entrar</button>
 
                 <p class="login">Já possuí conta? <a href="login.html">Entrar</a></p>
             </div>
-        </section>
+        </form>
+            
         <section class="text">
             <h4>Comece a organizar sua agenda em poucos minutos</h4>
             <p>Sem mais clientes esquecidas ou fora do prazo</p>
         </section>
     </main>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>

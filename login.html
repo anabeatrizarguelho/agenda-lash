@@ -18,31 +18,31 @@
             <p>Controle os prazos de 15 dias em um só lugar</p>
         </section>
 
-        <section class="form">
+        <form action="">
             <div>
                 <p class="mark">Agenda de cílios</p>
                 <h5>Entrar</h5>
                 <p class="subtext">Acesse sua agenda de clientes</p>
 
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required pattern="[A-Za-z]{3}-[0-9]{4}" title="3 letras, hífen e 4 números (ex: ABC-1234)">
 
                 <label for="senha">Senha</label>
                 <div class="password-wrapper">
                     <input type="password" name="password" id="showPassword" minlength="8" maxlength="10" required>
-                    <i class="fa-regular fa-eye" id="icone-olho"></i>
+                    <i id="hidePassword" class="fa-regular fa-eye"></i>
                 </div>
                 
                 <p class="reset-password">Esqueci minha senha</p>
 
                 <button class="submit-btn" type="submit">Entrar</button>
-                <button class="google-login-btn" type="button"><i class="fa-brands fa-google"></i>Entrar com a conta Google</button>
+                <button class="google-login-btn" type="submit"><i class="fa-brands fa-google"></i>Entrar com a conta Google</button>
 
                 <p class="register">Não tem conta? <a href="register.html">Cadastre-se</a></p>
             </div>
-        </section>
+        </form>
     </main>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>
