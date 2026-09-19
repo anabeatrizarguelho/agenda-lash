@@ -14,64 +14,105 @@
 <body>
     <header>
         <p>Olá, <span>Nome Completo do usuário</span></p>
-        <i class="fa-regular fa-bell"></i>
-        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-power-off"></i>
     </header>
     <main>
         <section class="header-main">
             <h4>Agenda de cílios</h4>
-            <button>+ Nova cliente</button>
+            <button id="abrirModal">+ Nova cliente</button>
         </section>
 
         <section class="cards-area">
             <div class="cards-contadores">
                 <p>Em dia</p>
-                <h5>8</h5>
+                <h5>0</h5>
             </div>
 
             <div class="cards-contadores">
                 <p>Manutenção</p>
-                <h5>2</h5>
+                <h5>0</h5>
             </div>
 
             <div class="cards-contadores">
                 <p>Atrasadas</p>
-                <h5>5</h5>
+                <h5>0</h5>
             </div>
         </section>
 
-        <section class="cards-clientes-area">
-                <div class="card-cliente">
-                    <div class="card-cliente-header">
-                        <h6 class="nome-cliente">Camila Souza</h6>
-                        <h6 class="numero-cliente">(21) 98031-9658</h6>
-                    <div>
-                    <div class="card-cliente-detail">
-                        <p>Última manutenção: </p>
-                        <p class="data-registrada">25/06</p>
-                        <p class="data-retorno">14/10</p>
-                    </div>
-                    <div class="card-cliente-status">
-                        <p class="status-cliente">Semana de manutenção</p>
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    
-                </div>
-
-                <!-- <div class="">
-                    <p class="nome-cliente">Renata Soares</p>
+        <!-- class="list" -->
+        <section class="clientes-section">
             
-                    <p class="numero-cliente">(21) 98031-9658</p>
-                    <p class="status-cliente">Atrasada</p>
-                    <i class="fa-brands fa-whatsapp"></i>
+            <!-- estado: em dia -->
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-name">Beatriz Rangel - (21) 99999-8969</div>
+                    <div class="card-meta">Última visita: 10/09/26 · vence 25/09/26</div>
+                </div>
+                
+                <div class="card-actions">
+                    <span class="badge" data-status="em-dia">em dia</span>
+                </div>
+            </div>
+            
+            <!-- estado: pendente -->
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-name">Camila Souza - (21) 99999-8969</div>
+                    <div class="card-meta">Última visita: 03/04/26 · vence 13/05/2026</div>
                 </div>
 
-                <div class="">
-                    <p class="nome-cliente">Beatriz Rangel</p>
-                    <p class="numero-cliente">(21) 98031-9658</p>
-                    <p class="status-cliente">Em dia</p>
-                </div> -->
+                <div class="card-actions">
+                    <span class="badge" data-status="manutencao">manutenção</span>
+                    <button title="Chamar no WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- estado: vencido -->
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-name">Renata Soares - (21) 99999-8969</div>
+                    <div class="card-meta">Última visita: 03/04/26 · venceu 13/05/2026</div>
+                </div>
+                
+                <div class="card-actions">
+                    <span class="badge" data-status="vencido">manutenção</span>
+                    <button type="button" aria-label="Chamar no WhatsApp" title="Chamar no WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
+    <!-- modal add nova cliente -->
+     <dialog id="meuModal">
+        <!-- <div class="dialog"> -->
+        <form action="" method="dialog">
+            <h5>Nova cliente</h5>
+            <p class="subtext">Preencha os dados para começar o acompanhamento</p>
+
+            <label for="">Nome</label>
+            <input type="text" name="" id="" required>
+
+            <label for="">WhatsApp</label>
+            <input type="number" name="" id="" required>
+
+            <label for="">Data de atendimento</label>
+            <input type="date" name="" id="" required>
+
+            
+            <div class="previsao-retorno">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Retorno previsto: 02/08/2026</span>
+            </div>
+
+            <button class="submit-btn" type="submit">Salvar cliente</button>
+            <button class="cancel-btn" formmethod="dialog">Fechar</button>
+        </form>
+        <!-- </div> -->
+     </dialog>
+
+     <script src="js/pages/modal.js"></script>
 </body>
 </html>

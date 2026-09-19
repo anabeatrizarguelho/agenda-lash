@@ -1,6 +1,8 @@
-export default function initHidePassword() {
+function initHidePassword() {
     const mostrarSenha = document.getElementById("showPassword");
     const ocultarSenha = document.getElementById("hidePassword");
+
+    if (!ocultarSenha) return;
 
     ocultarSenha.addEventListener("click", function() {
         ocultarSenha.classList.toggle('fa-eye-slash');
@@ -13,4 +15,5 @@ export default function initHidePassword() {
             mostrarSenha.type = 'password'
         }
     })
-}
+};
+initHidePassword();

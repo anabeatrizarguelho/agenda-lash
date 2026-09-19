@@ -22,12 +22,7 @@ header span {
     font-weight: 700;
 }
 
-.fa-regular.fa-bell {
-    font-size: 22px;
-    margin-right: 2rem;
-}
-
-.fa-regular.fa-user {
+.fa-solid.fa-power-off {
     background-color: var(--color-white-primary);
     padding: 13px;
     border: 1.5px solid var(--color-gray-quaternary);
@@ -58,18 +53,13 @@ header span {
     height: 43px;
 }
 
-/* .header-main {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 2rem 3rem 2rem;
-} */
-
-
 
 .cards-area {
     display: grid;
     grid-template-columns: 25% 25% 25%;
+    gap: 0.5rem;
     padding-right: 2rem;
+
 
 }
 
@@ -96,26 +86,237 @@ header span {
     font-size: 25px;
 }
 
-.cards-clientes-area {
+.clientes-section {
+    width: 70%;
+    height: 100%;
+    margin-left: 0.5%;
     padding-left: 2rem;
-}
-
-
-
-/* 
-.card-cliente {
-    background-color: var(--color-white-primary);
-    width: 100%;
-    height: 81px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-}
-
-.card-cliente div {
     display: flex;
+    flex-direction: column;
+    
+}
 
-} */
+.card {
+    background-color: var(--color-white-primary);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    gap: 12px;
+    border: 1px solid var(--color-gray-quaternary);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 1rem;
+}
+
+.card-info{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    min-width:0;
+}
+
+.card-name {
+    font-family: "Inter", arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    /* white-space:nowrap; */
+    /* overflow:hidden; */
+    /* text-overflow:ellipsis; */
+
+}
+
+.card-meta {
+    font-family: "Inria Sans", arial, sans-serif;
+    font-size: 14px;
+    color: var(--color-gray-primary);
+}
+
+.badge {
+    font-family: "Inria Sans", arial, sans-serif;
+    font-size: 13px;
+    color: var(--color-black-primary);
+    border: 1.5px solid var(--color-black-primary);
+    border-radius: 6px;
+    padding: 0.1rem 0.5rem;
+    margin-right: 15px;
+    white-space:nowrap;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.fa-brands.fa-whatsapp {
+    font-size: 21px;
+    background: none;
+    border: 1px solid var(--color-black-primary);
+    border-radius: 50px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.badge[data-status="em-dia"] {
+    opacity: 0.5;
+}
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    border: none;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+form {
+    max-width: 960px;
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--color-white-primary);
+    border: 1px solid var(--color-gray-quaternary);
+    border-radius: 10px;
+}
+
+form h5 {
+    font-family: "Inter", arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px
+}
+
+.subtext {
+    font-family: "Inter", arial, sans-serif;
+    font-size: 13px;
+    color: var(--color-gray-secundary);
+    margin-bottom: 15px;
+}
+
+label {
+    font-family: "Inria sans", arial, sans-serif;
+    font-size: 15px;
+    color: var(--color-black-secundary);
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border: solid 1.5px var(--color-gray-quaternary);
+    margin-bottom: 15px;
+}
+
+input:focus {
+    outline: 1.5px solid var(--color-black-secundary);
+}
+
+input[type="text"] {
+    font-size: 15px;
+    padding: 8px;
+    color: var(--color-black-primary);
+}
+
+input[type="number"] {
+    font-size: 15px;
+    padding: 8px;
+    color: var(--color-black-primary);
+}
+
+input[type="date"] {
+    font-size: 15px;
+    padding: 8px;
+    color: var(--color-black-primary);
+    list-style: none;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    background-color: var(--color-black-primary);
+    color: var(--color-white-primary);
+    font-family: "Inter", arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    
+}
+
+.submit-btn:active {
+    background-color: #1e2123;
+    transform: scale(0.95)
+    
+}
+
+.previsao-retorno {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--bg-color-primary);
+    padding: 0.8rem;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.previsao-retorno span {
+    font-family: "Inria sans", arial, sans-serif;
+    font-size: 13px;
+    color: var(--color-gray-secundary);
+    
+}
+
+.fa-solid.fa-circle-exclamation {
+    font-size: 13px;
+    color: var(--color-gray-secundary);
+    margin-right: 5px;
+}
+
+.cancel-btn {
+    color: var(--color-black-primary);
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    font-family: "Inter" , arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: var(--color-white-primary);
+    border: 1px solid var(--color-gray-quaternary);
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+.cancel-btn:hover {
+    transform: scale(1.05);
+}
+
+.cancel-btn:active {
+    background-color: #efefef;
+    transform: scale(0.95)
+    
+}
 
 
 
@@ -123,11 +324,79 @@ header span {
 
 
 @media (max-width: 571px) {
-    .cards-contadores p {
-        font-size: small;
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+     
+    header p {
+        display: none;
+    }
+
+    .header-main h4 {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .cards-area {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .cards-contadores p, h5 {
+        font-size: 60%;
+    }
+    .clientes-section {
+        margin: 1rem 0 1rem 0;
+        padding: 0;
+    }
+
+    form {
+        width: 90vw;
+        height: auto;
+        max-height: 85vh;
+        overflow-y: auto;
+        padding: 1.5rem;
+        
     }
 }
 
 
+@media (max-width: 700px) {
+   form {
+        width: 90vw;
+        height: auto;
+        max-height: 85vh;
+        overflow-y: auto;
+        padding: 1.5rem;
+        
+    } 
+}
+
+
+/* @media (max-width: 717px) {
+
+    .cards-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .cards-contadores {
+        
+    } */
+    /* .card {
+        height: fit-content;
+    }
+
+    .card-actions{
+        display: flex;
+        flex-direction: column;
+    }
+    .badge {
+        margin-bottom: 10%;
+    } */
 
 
