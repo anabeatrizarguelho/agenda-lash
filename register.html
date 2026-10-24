@@ -20,7 +20,7 @@
                 <p class="subtext">Comece a organizar suas clientes</p>
 
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" maxlength="150" required>
+                <input type="text" name="nome" id="nome" minlength="3" maxlength="150" required pattern="[A-Za-z]{3}-[0-9]{4}" title="3 letras, hífen e 4 números (ex: ABC-1234)">
 
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" required>
@@ -43,6 +43,6 @@
         </section>
     </main>
 
-    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/pages/login.js"></script>
 </body>
 </html>

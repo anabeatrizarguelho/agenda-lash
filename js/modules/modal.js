@@ -1,4 +1,4 @@
-function initOpenModal() {
+export default function initOpenModal() {
     const openModalBtn = document.getElementById('abrirModal');
     const modal = document.getElementById('meuModal');
     const closeModal = document.querySelector('.cancel-btn')
@@ -10,6 +10,4 @@ function initOpenModal() {
     closeModal.addEventListener('click', () => {
         modal.close();
     });
-}
-
-initOpenModal();
+};

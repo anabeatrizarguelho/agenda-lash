@@ -51,7 +51,19 @@ header span {
     cursor: pointer;
     width: 100%;
     height: 43px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.header-main button span {
+    width: 100%;
+}
+
+.header-main button:active {
+    background-color: #1e2123;
+    transform: scale(0.95)
+    
+}
+
 
 
 .cards-area {
@@ -259,10 +271,10 @@ input[type="date"] {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.submit-btn:hover {
+/* .submit-btn:hover {
     transform: scale(1.05);
     
-}
+} */
 
 .submit-btn:active {
     background-color: #1e2123;
@@ -308,9 +320,9 @@ input[type="date"] {
     transition: transform 0.1s ease, background-color 0.1s ease;
 }
 
-.cancel-btn:hover {
+/* .cancel-btn:hover {
     transform: scale(1.05);
-}
+} */
 
 .cancel-btn:active {
     background-color: #efefef;
@@ -335,9 +347,17 @@ input[type="date"] {
         display: none;
     }
 
+    .header-main {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+
     .header-main h4 {
-        font-size: 25px;
+        font-size: 30px;
         width: 100%;
+        margin-bottom:  1rem;
     }
 
     .cards-area {
@@ -375,6 +395,7 @@ input[type="date"] {
         
     } 
 }
+
 
 
 /* @media (max-width: 717px) {
