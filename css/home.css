@@ -243,6 +243,12 @@ input[type="text"] {
     color: var(--color-black-primary);
 }
 
+input[type="tel"] {
+    font-size: 15px;
+    padding: 8px;
+    color: var(--color-black-primary);
+}
+
 input[type="number"] {
     font-size: 15px;
     padding: 8px;

@@ -13,8 +13,8 @@
 </head>
 <body>
     <header>
-        <p>Olá, <span>Nome Completo do usuário</span></p>
-        <i class="fa-solid fa-power-off"></i>
+        <p>Olá, <span id="nomeUsuario">Nome Completo do usuário</span></p>
+        <i class="fa-solid fa-power-off" id="logout"></i>
     </header>
     <main>
         <section class="header-main">
@@ -25,17 +25,17 @@
         <section class="cards-area">
             <div class="cards-contadores">
                 <p>Em dia</p>
-                <h5>0</h5>
+                <h5 id="emDia">0</h5>
             </div>
 
             <div class="cards-contadores">
                 <p>Manutenção</p>
-                <h5>0</h5>
+                <h5 id="manutencao">0</h5>
             </div>
 
             <div class="cards-contadores">
                 <p>Atrasadas</p>
-                <h5>0</h5>
+                <h5 id="atrasadas">0</h5>
             </div>
         </section>
 
@@ -55,7 +55,7 @@
             </div>
             
             <!-- estado: pendente -->
-            <div class="card">
+            <!-- <div class="card">
                 <div class="card-info">
                     <div class="card-name">Camila Souza - (21) 99999-8969</div>
                     <div class="card-meta">Última visita: 03/04/26 · vence 13/05/2026</div>
@@ -67,10 +67,10 @@
                         <i class="fa-brands fa-whatsapp"></i>
                     </button>
                 </div>
-            </div>
+            </div> -->
 
             <!-- estado: vencido -->
-            <div class="card">
+            <!-- <div class="card">
                 <div class="card-info">
                     <div class="card-name">Renata Soares - (21) 99999-8969</div>
                     <div class="card-meta">Última visita: 03/04/26 · venceu 13/05/2026</div>
@@ -82,33 +82,33 @@
                         <i class="fa-brands fa-whatsapp"></i>
                     </button>
                 </div>
-            </div>
+            </div> -->
         </section>
     </main>
     <!-- modal add nova cliente -->
      <dialog id="meuModal">
         <!-- <div class="dialog"> -->
-        <form action="" method="dialog">
+        <form id="formAddCliente" action="" method="dialog">
             <h5>Nova cliente</h5>
             <p class="subtext">Preencha os dados para começar o acompanhamento</p>
 
-            <label for="">Nome</label>
-            <input type="text" name="" id="" required>
+            <label for="nome">Nome</label>
+            <input type="text" name="" id="nome" required>
 
             <label for="">WhatsApp</label>
-            <input type="text" name="" id="whatsapp" placeholder="(00) 00000-0000" minlength="11" maxlength="11" required>
+            <input type="tel" name="whatsapp" id="whatsapp" placeholder="(00) 00000-0000" minlength="11" maxlength="11" required>
 
-            <label for="">Data de atendimento</label>
-            <input type="date" name="" id="" required>
+            <label for="dataAtendimento">Data de atendimento</label>
+            <input type="date" name="dataAtendimento" id="dataAtendimento" required>
 
             
             <div class="previsao-retorno">
                 <i class="fa-solid fa-circle-exclamation"></i>
-                <span>Retorno previsto: 02/08/2026</span>
+                <span id="dataRetorno">Data de retorno</span>
             </div>
 
             <button class="submit-btn" type="submit">Salvar cliente</button>
-            <button class="cancel-btn" formmethod="dialog">Cancelar</button>
+            <button class="cancel-btn" type="button" formmethod="dialog">Cancelar</button>
         </form>
         <!-- </div> -->
      </dialog>
