@@ -12,6 +12,18 @@
     --color-white-primary: #ffffff;
 
     --bg-color-primary: #f5f4f0;
+
+    --status-ok-bg: #e8f3ec;
+    --status-ok-text: #2f6f4a;
+
+    --status-warning-bg: #fdf3dc;
+    --status-warning-text: #9a6b00;
+
+    --status-danger-bg: #fbeaea;
+    --status-danger-text: #a83232;
+    
+
+
 }
 
 * {

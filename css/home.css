@@ -14,7 +14,6 @@ header {
 header p {
     font-family: "Inria Sans", arial, sans-serif ;
     font-size: 18px;
-    color: var(--);
     margin-right: 2rem;
 }
 
@@ -336,6 +335,23 @@ input[type="date"] {
     
 }
 
+.badge[data-status="em-dia"] {
+    background-color: var(--status-ok-bg);
+    color: var(--status-ok-text);
+    border-color: var(--status-ok-text);
+}
+
+.badge[data-status="manutencao"] {
+    background-color: var(--status-warning-bg);
+    color: var(--status-warning-text);
+    border-color: var(--status-warning-text);
+}
+
+.badge[data-status="vencido"] {
+    background-color: var(--status-danger-bg);
+    color: var(--status-danger-text);
+    border-color: var(--status-danger-text);
+}
 
 
 

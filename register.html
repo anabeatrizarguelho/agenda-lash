@@ -13,24 +13,25 @@
 </head>
 <body>
     <main>
-        <form action="">
+        <form id="formRegister" action="">
            <div>
                 <p class="mark">Agenda de cílios</p>
                 <h5>Criar conta</h5>
                 <p class="subtext">Comece a organizar suas clientes</p>
 
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" minlength="3" maxlength="150" required">
+                <input type="text" name="nome" id="nome" minlength="3" maxlength="150" required>
 
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" required>
 
                 <label for="senha">Senha</label>
                 <div class="password-wrapper">
-                    <input type="password" id="showPassword" name="password" minlength="6" required>
+                    <input type="password" id="showPassword" name="password" minlength="6" maxlength="20" required>
                     <i id="hidePassword" class="fa-regular fa-eye"></i>
                 </div>
 
+                <p id="mensagem" class="mensagem"></p>
                 <button class="submit-btn" type="submit">Criar conta</button>
 
                 <p class="login">Já possuí conta? <a href="login.html">Entrar</a></p>
@@ -43,6 +44,6 @@
         </section>
     </main>
 
-    <script type="module" src="js/pages/login.js"></script>
+    <script type="module" src="js/pages/register.js"></script>
 </body>
 </html>

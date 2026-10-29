@@ -220,6 +220,17 @@ button i {
     
 }
 
+.mensagem {
+    font-family: "Inter", arial, sans-serif;
+    font-size: 13px;
+    color: #c0392b;
+    margin-bottom: 10px;
+}
+
+.mensagem.sucesso {
+    color: #2e7d32;
+}
+
 
 
 
