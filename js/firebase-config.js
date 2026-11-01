@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyBaqg9Dm2wP9aLYWXCUe8aCa4MmK6m7Gfo",
   authDomain: "agenda-lash-108f1.firebaseapp.com",
