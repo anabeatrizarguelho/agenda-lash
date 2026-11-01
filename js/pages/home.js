@@ -6,4 +6,4 @@ import initValidaModal from "../modules/validacao-modal.js";
 
 initOpenModal();
 initFormCliente();
-initValidaModal(),3
+initValidaModal();
