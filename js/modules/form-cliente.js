@@ -2,7 +2,7 @@ export default function initFormCliente() {
     const formCliente = document.getElementById('formAddCliente');
     
     formCliente.addEventListener('submit', (event) => {
-    event.preventDefault;
+    event.preventDefault();
 
     const nomeCliente = document.getElementById('nome');
     const whatsappCliente = document.getElementById('whatsapp');
