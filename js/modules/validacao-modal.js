@@ -1,10 +1,10 @@
 export default function initValidaModal() {
     const inputNome = document.getElementById('nome');
     const inputWhatsApp = document.getElementById('whatsapp');
+    const cancelarEnvio = document.getElementById('cancelarEnvio');
 
     inputNome.addEventListener('input', (e) => {
     e.target.value = e.target.value.replace(/\d/g, "");
-    
     })
 
     inputWhatsApp.addEventListener('input', (e) => {
@@ -18,4 +18,11 @@ export default function initValidaModal() {
         }
         e.target.value = whatsapp;
     })
+
+    cancelarEnvio.addEventListener('click', (e) => {
+        e.preventDefault();
+    })
+
+    
+
 }
