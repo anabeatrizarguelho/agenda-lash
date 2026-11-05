@@ -1,5 +1,5 @@
 export default function initHidePassword () {
-    const mostrarSenha = document.getElementById("showPassword");
+    const mostrarSenha = document.querySelector('.show-password')
     const ocultarSenha = document.getElementById("hidePassword");
 
     if (!ocultarSenha) return;
