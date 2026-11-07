@@ -1,11 +1,13 @@
 /* 
-0 a 9:      Em dia - em-dia
-10 a 15:    Manutenção (aviso de 5 dias de antecedência) -	manutencao
-16 em diante - Atrasada
+Correção de lógica:
+
+- Se passado mais de 20 dias: Vai exibir "Vencido";
+- Se for igual ou MAIOR QUE 18(Vai avisar 2 dias antes): Vai exibir "Manutenção"
+ 
 */
 
-const DIAS_AVISO =  10;
-const DIAS_PRAZO =  15;
+const DIAS_AVISO =  18;
+const DIAS_PRAZO =  20;
 
 
 export function definirStatus(dias) {
