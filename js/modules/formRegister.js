@@ -3,7 +3,8 @@ import { registerUser } from "./auth.js";
 export default function initFormRegister() {
     const form = document.getElementById('formRegister')
 
-    if (!form);
+    if (!form)
+        return;
 
     form.addEventListener("submit", async (event) => {
         event.preventDefault();
